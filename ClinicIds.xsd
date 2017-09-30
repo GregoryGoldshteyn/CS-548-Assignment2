@@ -3,7 +3,7 @@
     xmlns="http://www.example.org/schemas/clinic/clinic_ids"
     targetNamespace="http://www.example.org/schemas/clinic/clinic_ids"
     elementFormDefault="qualified">
-    <xs:simpleType name="PatientIdType">
+    <xs:simpleType name="PatientIdType" final="">
         <xs:restriction base="xs:long"/>
     </xs:simpleType>
     <xs:simpleType name="TreatmentIdType">
