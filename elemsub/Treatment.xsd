@@ -2,7 +2,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
     targetNamespace="http://www.example.org/schemas/clinic/treatment"
     xmlns:cid="http://www.example.org/schemas/clinic/clinic_ids"
-    
     xmlns:trt="http://www.example.org/schemas/clinic/treatment">
 
     <xs:import namespace="http://www.example.org/schemas/clinic/clinic_ids"
@@ -30,12 +29,11 @@
         <xs:sequence>
             <xs:element name="provider-id" type="cid:PatientIdType"/>
             <xs:element name="diagnosis" type="xs:string"/>
-            <xs:choice>
-                <xs:element name="drug-treatment" type="trt:DrugTreatmentType"/>
-                <xs:element name="radiology" type="trt:RadiologyTreatmentType"/>
-                <xs:element name="surgery" type="trt:SurgeryTreatmentType"/>
-            </xs:choice>
+            <xs:element ref="trt:TreatmentGroup"/>
         </xs:sequence>
     </xs:complexType>
-    
+    <xs:element name="TreatmentGroup" abstract="true"/>
+    <xs:element name="DrugTreatment" type="trt:DrugTreatmentType" substitutionGroup="trt:TreatmentGroup"/>
+    <xs:element name="SurgeryTreatment" type="trt:SurgeryTreatmentType" substitutionGroup="trt:TreatmentGroup"/>
+    <xs:element name="RadiologyTreatment" type="trt:RadiologyTreatmentType" substitutionGroup="trt:TreatmentGroup"/>
 </xs:schema>
