@@ -9,4 +9,7 @@
     <xs:simpleType name="TreatmentIdType">
         <xs:restriction base="xs:long"/>
     </xs:simpleType>
+    <xs:simpleType name="ProviderIdType">
+        <xs:restriction base="xs:long"/>
+    </xs:simpleType>
 </xs:schema>
