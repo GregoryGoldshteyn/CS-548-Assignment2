@@ -43,5 +43,8 @@
             <xs:element name="diagnosis" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:element name="surgery" type="trt:SurgeryTreatmentType"/>
+    <xs:element name="drug-treatment" type="trt:DrugTreatmentType"/>
+    <xs:element name="radiology" type="trt:RadiologyTreatmentType"/>
 
 </xs:schema>

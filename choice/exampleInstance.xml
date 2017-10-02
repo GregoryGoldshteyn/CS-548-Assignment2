@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Clinic xmlns:cid="http://www.example.org/schemas/clinic/clinic_ids"
+ xmlns:pat="http://www.example.org/schemas/clinic/patient"
+ xmlns:prov="http://www.example.org/schemas/clinic/provider"
+ xmlns="http://www.example.org/schemas/clinic"
+ xmlns:trt="http://www.example.org/schemas/clinic/treatment"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.example.org/schemas/clinic Clinic.xsd">
+ 
+ <pat:Patient>
+  <pat:patient-id>0</pat:patient-id>
+  <pat:name>Captian Nemo</pat:name>
+  <pat:dob>1917-06-21</pat:dob>
+  <pat:treatments>
+   <trt:provider-id>1</trt:provider-id>
+   <trt:diagnosis>Lung tissue graft from CO2 poisoning</trt:diagnosis>
+   <trt:surgery>
+    <trt:surgeon>Sam Fabrezzio</trt:surgeon>
+    <trt:date>2017-12-12</trt:date>
+   </trt:surgery>
+  </pat:treatments>
+  <pat:treatments>
+   <trt:provider-id>1</trt:provider-id>
+   <trt:diagnosis>Asthma sufferer</trt:diagnosis>
+   <trt:drug-treatment>
+    <trt:name>Breo</trt:name>
+    <trt:dosage>0.00125</trt:dosage>
+    <trt:physician>Sam Fabrezzio</trt:physician>
+   </trt:drug-treatment>
+  </pat:treatments>
+ </pat:Patient>
+ 
+ <pat:Patient>
+  <pat:patient-id>1</pat:patient-id>
+  <pat:name>Steve Stevenson</pat:name>
+  <pat:dob>1985-09-24</pat:dob>
+  <pat:treatments>
+   <trt:provider-id>1</trt:provider-id>
+   <trt:diagnosis>Accute feline allergy</trt:diagnosis>
+   <trt:drug-treatment>
+    <trt:name>Dymista</trt:name>
+    <trt:dosage>0.000050</trt:dosage>
+    <trt:physician>Dr. Doolittle</trt:physician>
+   </trt:drug-treatment>
+  </pat:treatments>
+ </pat:Patient>
+ <pat:Patient>
+  <pat:patient-id>2</pat:patient-id>
+  <pat:name>Rob Robinson</pat:name>
+  <pat:dob>1895-11-30</pat:dob>
+  <pat:treatments>
+   <trt:provider-id>1</trt:provider-id>
+   <trt:diagnosis>Tiny people in gut need music</trt:diagnosis>
+   <trt:radiology>
+    <trt:radiologist>Elvis Duran</trt:radiologist>
+    <trt:dates>2017-11-05</trt:dates>
+    <trt:dates>2017-11-12</trt:dates>
+    <trt:dates>2017-11-19</trt:dates>
+   </trt:radiology>
+  </pat:treatments>
+ </pat:Patient>
+ <pat:Patient>
+  <pat:patient-id>3</pat:patient-id>
+  <pat:name>Rob Stevenson</pat:name>
+  <pat:dob>2010-01-25</pat:dob>
+  <pat:treatments>
+   <trt:provider-id>2</trt:provider-id>
+   <trt:diagnosis>Sixth toe removal</trt:diagnosis>
+   <trt:surgery>
+    <trt:surgeon>Dr. Pepper</trt:surgeon>
+    <trt:date>2018-03-05</trt:date>
+   </trt:surgery>
+  </pat:treatments>
+ </pat:Patient>
+ <prov:Provider>
+  <prov:provider-id>0</prov:provider-id>
+  <prov:name>Dr. Twomore</prov:name>
+  <prov:speciailization>Oncology</prov:speciailization>
+ </prov:Provider>
+ <prov:Provider>
+  <prov:provider-id>1</prov:provider-id>
+  <prov:name>Rick Sanchez</prov:name>
+  <prov:speciailization>Pnuemlogy</prov:speciailization>
+ </prov:Provider>
+ <prov:Provider>
+  <prov:provider-id>2</prov:provider-id>
+  <prov:name>Doug Funny</prov:name>
+  <prov:speciailization>Pediatry</prov:speciailization>
+ </prov:Provider>
+</Clinic>
